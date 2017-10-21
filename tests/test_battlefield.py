@@ -5,6 +5,16 @@ from bf1.exceptions import PlatformError, ConfigError
 
 from .utils import API_KEY
 
+from vehicle import VEHICLES
+
+def _convert_to_list(data):
+    if isinstance(data, (str)):
+        res = [data]
+    elif isinstance(data, (list)):
+        res = data
+    else:
+        res = []
+    return res
 
 def test_platform_play():
     bf = Battlefield('test', '123456', 'playstation')
@@ -60,16 +70,36 @@ def test_api_call():
     assert len(response) == 4
 
 
-def test_weapon_call():
+def test_weapon_call(weapon=None):
     bf = Battlefield('girbons', API_KEY, 'Pc')
-    response = bf.progression_service.get_weapon(weapon='survival knife')
-    assert len(response) == 4
+    if weapon is None:
+        weapon_list = WEAPONS
+    else:
+        weapon_list = _convert_to_list(weapon)
+
+    for w in weapon_list:
+        try:
+            response = bf.progression_service.get_weapon(weapon=w)
+            assert response.status_code == 200
+        except AssertionError:
+            # Do something
+            raise
 
 
-def test_vehicle_call():
+def test_vehicle_call(vehicle=None):
     bf = Battlefield('girbons', API_KEY, 'Pc')
-    response = bf.progression_service.get_vehicle(vehicle='mark v landship')
-    assert len(response) == 4
+    if vehicle is None:
+        vehicle_list = VEHICLES
+    else:
+        vehicle_list = _convert_to_list(vehicle)
+
+    for v in vehicle_list:
+        try:
+            response = bf.progression_service.get_vehicle(vehicle=v)
+            assert response.status_code == 200
+        except AssertionError:
+            # Do something
+            raise
 
 
 def test_custom_api_map():
