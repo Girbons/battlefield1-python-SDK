@@ -6,6 +6,7 @@ from bf1.exceptions import PlatformError, ConfigError
 from .utils import API_KEY
 
 from vehicle import VEHICLES
+from weapon import  WEAPONS
 
 def _convert_to_list(data):
     if isinstance(data, (str)):
