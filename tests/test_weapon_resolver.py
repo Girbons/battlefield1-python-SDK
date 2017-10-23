@@ -127,7 +127,7 @@ def test_sniper_decoy():
     assert response.status_code == 200
 
 
-def test_m1909_benet_mercie_Optical():
+def test_m1909_benet_mercie_optical():
     response = weapon_call('m1909 benet mercie Optical')
     assert response.status_code == 200
 
@@ -222,7 +222,7 @@ def test_12g_automatic_backbored():
     assert response.status_code == 200
 
 
-def test_lawrence_of_arabia's_SMLE():
+def test_lawrence_of_arabia's_smle():
     response = weapon_call('lawrence of arabia's SMLE')
     assert response.status_code == 200
 
@@ -327,7 +327,7 @@ def test_m1903():
     assert response.status_code == 200
 
 
-def test_tripwire_bomb_INC():
+def test_tripwire_bomb_inc():
     response = weapon_call('tripwire bomb INC')
     assert response.status_code == 200
 
@@ -397,7 +397,7 @@ def test_incendiary_grenade():
     assert response.status_code == 200
 
 
-def test_rifle_grenade_—_HE():
+def test_rifle_grenade_—_he():
     response = weapon_call('rifle grenade — HE')
     assert response.status_code == 200
 
@@ -422,7 +422,7 @@ def test_k_bullets():
     assert response.status_code == 200
 
 
-def test_tripwire_bomb_—_GAS():
+def test_tripwire_bomb_—_gas():
     response = weapon_call('tripwire bomb — GAS')
     assert response.status_code == 200
 
@@ -437,7 +437,7 @@ def test_ribeyrolles_1918_factory():
     assert response.status_code == 200
 
 
-def test_m1909_benet_mercie_Storm():
+def test_m1909_benet_mercie_storm():
     response = weapon_call('m1909 benet mercie Storm')
     assert response.status_code == 200
 
@@ -457,7 +457,7 @@ def test_smle_mkiii():
     assert response.status_code == 200
 
 
-def test_crossbow_launcher_FRG():
+def test_crossbow_launcher_frg():
     response = weapon_call('crossbow launcher FRG')
     assert response.status_code == 200
 
@@ -487,7 +487,7 @@ def test_shovel():
     assert response.status_code == 200
 
 
-def test_tripwire_bomb_—_HE():
+def test_tripwire_bomb_—_he():
     response = weapon_call('tripwire bomb — HE')
     assert response.status_code == 200
 
@@ -507,7 +507,7 @@ def test_no_3_revolver():
     assert response.status_code == 200
 
 
-def test_crossbow_launcher_HE():
+def test_crossbow_launcher_he():
     response = weapon_call('crossbow launcher HE')
     assert response.status_code == 200
 
@@ -742,7 +742,7 @@ def test_sawtooth_knife():
     assert response.status_code == 200
 
 
-def test_m1909_benet_mercie_Telescopic():
+def test_m1909_benet_mercie_telescopic():
     response = weapon_call('m1909 benet mercie Telescopic')
     assert response.status_code == 200
 
@@ -772,7 +772,7 @@ def test_mg15_na_low_weight():
     assert response.status_code == 200
 
 
-def test_rifle_grenade_FRG():
+def test_rifle_grenade_frg():
     response = weapon_call('rifle grenade FRG')
     assert response.status_code == 200
 
@@ -812,7 +812,7 @@ def test_wex():
     assert response.status_code == 200
 
 
-def test_rifle_grenade_SMK():
+def test_rifle_grenade_smk():
     response = weapon_call('rifle grenade SMK')
     assert response.status_code == 200
 
