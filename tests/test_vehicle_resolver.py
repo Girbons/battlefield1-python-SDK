@@ -87,7 +87,7 @@ def test_fk_96_field_gun():
     assert response.status_code == 200
 
 
-def test_albatros_diii__fighter():
+def test_albatros_diii_fighter():
     response = vehicle_call('albatros diii  fighter')
     assert response.status_code == 200
 

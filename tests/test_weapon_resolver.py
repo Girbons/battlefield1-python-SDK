@@ -397,7 +397,7 @@ def test_incendiary_grenade():
     assert response.status_code == 200
 
 
-def test_rifle_grenade_—_he():
+def test_rifle_grenade_he():
     response = weapon_call('rifle grenade — HE')
     assert response.status_code == 200
 
@@ -422,7 +422,7 @@ def test_k_bullets():
     assert response.status_code == 200
 
 
-def test_tripwire_bomb_—_gas():
+def test_tripwire_bomb_gas():
     response = weapon_call('tripwire bomb — GAS')
     assert response.status_code == 200
 
@@ -487,7 +487,7 @@ def test_shovel():
     assert response.status_code == 200
 
 
-def test_tripwire_bomb_—_he():
+def test_tripwire_bomb_he():
     response = weapon_call('tripwire bomb — HE')
     assert response.status_code == 200
 
