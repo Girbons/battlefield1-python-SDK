@@ -10,7 +10,7 @@ def test_api_request():
     api = Api()
     api_url = 'Stats/CareerForOwnedGames?platform=3&displayName=Girbons'
     response = api.request(api_url, API_KEY, METHOD)
-    assert len(response) == 4
+    assert len(response.json()) == 4
 
 
 def test_api_request_forbidden():

@@ -1,14 +1,11 @@
-import pytest
-
 from bf1.battlefield import Battlefield
-from bf1.resolvers import resolve_vehicle
 
 from .utils import API_KEY
 
 
 def vehicle_call(vehicle):
     bf = Battlefield('girbons', API_KEY, 'Pc')
-    response = bf.progression_service.get_vehicle(vehicle=resolve_vehicle(vehicle))
+    response = bf.progression_service.get_vehicle(vehicle=vehicle)
     return response
 
 

@@ -57,7 +57,7 @@ def test_api_call_not_configured():
 def test_api_call():
     bf = Battlefield('girbons', API_KEY, 'Pc')
     response = bf.stats_service.basic_stats()
-    assert len(response) == 4
+    assert len(response.json()) == 4
 
 
 def test_custom_api_map():
@@ -74,4 +74,4 @@ def test_custom_api_map():
     bf = Battlefield('girbons', API_KEY, 'Pc', custom_api_map['api'])
     response = bf.stats_service.career_for_owned_games()
     assert bf.api_map == custom_api_map['api']
-    assert len(response) == 4
+    assert len(response.json()) == 4

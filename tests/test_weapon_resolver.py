@@ -1,14 +1,11 @@
-import pytest
-
 from bf1.battlefield import Battlefield
-from bf1.resolvers import resolve_weapon
 
 from .utils import API_KEY
 
 
 def weapon_call(weapon):
     bf = Battlefield('girbons', API_KEY, 'Pc')
-    response = bf.progression_service.get_weapon(weapon=resolve_weapon(weapon))
+    response = bf.progression_service.get_weapon(weapon=weapon)
     return response
 
 
